@@ -1,0 +1,27 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.23)  14 JUN 2014 12:50
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**index.tex
+(./index.tex
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 5 languages loaded.
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ï
+     »¿\documentclass[12pt,a4paper]{report} 
+Here is how much of TeX's memory you used:
+ 5 strings out of 494952
+ 253 string characters out of 6179606
+ 46149 words of memory out of 5000000
+ 3325 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 56 hyphenation exceptions out of 8191
+ 5i,0n,4p,51b,14s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+!  ==> Fatal error occurred, no output PDF file produced!
