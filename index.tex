@@ -1,6 +1,5 @@
-﻿\documentclass[12pt,a4paper]{book}
-\usepackage{polski}
-\usepackage[cp1250]{inputenc}
+\documentclass[12pt,a4paper]{book}
+
 \usepackage{indentfirst}% wcięcie w pierwszym akapicie
 \usepackage{fullpage} %wciecie akapitu na 1 cal
 
@@ -34,7 +33,7 @@
 \usepackage{multirow}
 \sloppy
 
-\usepackage[scaled]{uarial}
+% \usepackage[scaled]{uarial}
 %\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
 %\usepackage[T1]{fontenc}
 
@@ -87,22 +86,28 @@ np:
 \begin{lstlisting}[language=bash]
   $ git clone git@github.com:WMP/GitLab2.git
 \end{lstlisting}
+Po zainicjalizowaniu repo nalezy dodać upstream do głównego repo, aby móc pobierac zmiany z repo, które forkowaliśmy:
+\begin{lstlisting}[language=bash]
+  $ git remote add upstream https://github.com/makas9393/lab.git
+\end{lstlisting}
 
 Commit zmian:
 \begin{lstlisting}[language=bash]
   $ git commit -m "comment"
 \end{lstlisting}
 
-Po zainicjalizowaniu repo nalezy dodać upstream do głównego repo, aby móc pobierac zmiany z repo, które forkowaliśmy:
+Aby wysłać zmiany należy wykonać:
 \begin{lstlisting}[language=bash]
-  $ git remote add upstream https://github.com/makas9393/lab.git
+  $ git push
+\end{lstlisting}
+następnie nalezy wejśc w swojego forka na githubie, i wysłać właścicielowi repo "Pull Requests". Jeśli właściciel repo zaapceptuje zmiany, twoja zmiana pojawi się w głównym repo. 
+
+Aby odświeżyć zmiany z GŁÓWNEGO repo, należy wykonać:
+\begin{lstlisting}[language=bash]
+  $ git fetch upstream
+  $ git rebase upstream/master
 \end{lstlisting}
 
-Aby odświeżyć zmiany należy wykonać:
-\begin{lstlisting}[language=bash]
-  $ git fetch
-  $ git rebase origin/master
-\end{lstlisting}
 
 Rozwiązanie konfliktu:
 \begin{lstlisting}[language=bash]
@@ -110,6 +115,8 @@ $ git add -A
 $ git rebase --continue
 $ git merge --continue
 $ git commit -m "error"
+
 \end{lstlisting}
+
 
 \end{document}
