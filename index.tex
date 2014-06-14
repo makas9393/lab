@@ -1,6 +1,5 @@
-﻿\documentclass[12pt,a4paper]{book}
-\usepackage{polski}
-\usepackage[cp1250]{inputenc}
+\documentclass[12pt,a4paper]{book}
+
 \usepackage{indentfirst}% wcięcie w pierwszym akapicie
 \usepackage{fullpage} %wciecie akapitu na 1 cal
 
@@ -34,7 +33,7 @@
 \usepackage{multirow}
 \sloppy
 
-\usepackage[scaled]{uarial}
+% \usepackage[scaled]{uarial}
 %\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
 %\usepackage[T1]{fontenc}
 
@@ -106,7 +105,7 @@ następnie nalezy wejśc w swojego forka na githubie, i wysłać właścicielowi
 Aby odświeżyć zmiany z GŁÓWNEGO repo, należy wykonać:
 \begin{lstlisting}[language=bash]
   $ git fetch upstream
-  $ git rebase origin/master
+  $ git rebase upstream/master
 \end{lstlisting}
 
 Rozwiązanie konfliktu:
