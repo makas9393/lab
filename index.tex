@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{report}
+﻿\documentclass[12pt,a4paper]{report}
 
 
 \usepackage{siunitx}
@@ -53,6 +53,14 @@ Aby odświeżyć zmiany należy wykonać:
 \begin{lstlisting}[language=bash]
   $ git fetch
   $ git rebase origin/master
+\end{lstlisting}
+
+Rozwiązanie konfliktu:
+\begin{lstlisting}[language=bash]
+$ git add -A
+$ git rebase --continue
+$ git merge --continue
+$ git commit -m "error"
 \end{lstlisting}
 
 \end{document}
