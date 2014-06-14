@@ -3,7 +3,7 @@
 
 \usepackage{siunitx}
 
-
+\usepackage{listings}
 \usepackage[utf8]{inputenc}
 \usepackage[polish]{babel}
 \usepackage{lmodern}
@@ -14,12 +14,29 @@
 
 \author{my!}
 \title{3 Słowa o git}
+
+\lstset{
+  frame=single,
+  captionpos=b,
+  basicstyle=\scriptsize,
+  postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookrightarrow\space}},
+  breaklines=true
+}
+
 \begin{document}
 \maketitle
 
 \chapter{Inicjalizacja repo}
-git clone adres repo, np.: git clone git@github.com:WMP/GitLab2.git
-git checkout nazwa - przelaczanie na galaz nazwa
+Aby sklonować repo u siebie na dysku należy wykonać polecenie:
+\begin{lstlisting}[language=bash]
+  $ git clone ADRES REPO
+\end{lstlisting}
+np:
+\begin{lstlisting}[language=bash]
+  $ git clone git@github.com:WMP/GitLab2.git
+\end{lstlisting}
+
+
 
 
 \end{document}
