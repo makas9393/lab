@@ -37,5 +37,15 @@ np:
 \end{lstlisting}
 
 
+Po zainicjalizowaniu repo nalezy dodać upstream do głównego repo, aby móc pobierac zmiany z repo, które forkowaliśmy:
+\begin{lstlisting}[language=bash]
+  $ git remote add upstream https://github.com/makas9393/lab.git
+\end{lstlisting}
+
+Aby odświeżyć zmiany należy wykonać:
+\begin{lstlisting}[language=bash]
+  $ git fetch
+  $ git rebase origin/master
+\end{lstlisting}
 
 \end{document}
